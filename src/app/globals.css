@@ -1,26 +1,124 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:where(.dark, .dark *));
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@theme {
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-cinzel: var(--font-cinzel), serif;
+  --font-montserrat: var(--font-montserrat), sans-serif;
+  --font-cormorant: var(--font-cormorant), serif;
+  --font-bodoni: var(--font-bodoni), serif;
+  
+  --color-cream-50: #FAFAF7;
+  --color-cream-100: #F3F2EB;
+  --color-cream-200: #E7E5D9;
+  --color-charcoal-800: #1D1D1D;
+  --color-charcoal-900: #0C0C0C;
+  --color-accent-red: #8B0000;
+  
+  --animate-ticker: ticker 30s linear infinite;
+  --animate-fadeIn: fade-in 0.25s ease-out;
+  --animate-slideDown: slide-down 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-slideRight: slide-right 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  --scale-101: 1.01;
+  --scale-102: 1.02;
+  
+  @keyframes ticker {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: scale(0.98) translateY(2px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slide-right {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
   }
 }
 
+:root {
+  --background: #FAFAF7;
+  --foreground: #0C0C0C;
+  --border-color: rgba(12, 12, 12, 0.15);
+}
+
+.dark {
+  --background: #0C0C0C;
+  --foreground: #FAFAF7;
+  --border-color: rgba(250, 250, 247, 0.12);
+}
+
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  overflow-x: hidden;
+}
+
+/* Premium Newsroom Editorial Styles */
+.editorial-grid {
+  border-color: var(--border-color);
+}
+
+/* Elegant Drop Caps for Editorial stories */
+.drop-cap::first-letter {
+  font-family: var(--font-serif);
+  float: left;
+  font-size: 4.8rem;
+  line-height: 4rem;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(12, 12, 12, 0.2);
+  border-radius: 3px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(250, 250, 247, 0.2);
+}
+
+/* Scroll snap utilities for ticker */
+.ticker-container::-webkit-scrollbar {
+  display: none;
 }

@@ -159,7 +159,7 @@ export default function Navbar() {
                   <span className="font-cormorant font-bold tracking-[0.18em] text-charcoal-900 dark:text-cream-50">DRISHTI</span>
                   <span className="font-sans font-black tracking-[0.15em] text-accent-red dark:text-red-500">KON</span>
                 </span>
-                <span className="text-[10px] tracking-[0.3em] font-serif italic font-bold text-charcoal-800/60 dark:text-cream-100/60 mt-2.5 mr-[-0.3em] uppercase">
+                <span className="text-[9px] tracking-[0.32em] font-sans font-black text-accent-red dark:text-red-500 mt-2.5 mr-[-0.32em] uppercase">
                   Perspective Since Yesterday
                 </span>
               </Link>

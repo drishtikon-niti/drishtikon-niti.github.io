@@ -5,8 +5,10 @@ import Link from "next/link";
 import { ARTICLES } from "@/data/articles";
 
 export default function TooRealSection() {
-  // Filter articles that contain comparison data
-  const comparisonArticles = ARTICLES.filter((a) => a.tooReal !== undefined);
+  // Filter and sort articles that contain comparison data (newest first)
+  const comparisonArticles = ARTICLES
+    .filter((a) => a.tooReal !== undefined)
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (
     <section className="w-full py-16 border-b border-black/10 dark:border-white/10 transition-colors duration-300">

@@ -330,6 +330,87 @@ export const ARTICLES: Article[] = [
 
       <p>For without a final boundary, our thoughts are not truly ours—they are just a continuous script running in a sandbox we do not own.</p>
     `
+  },
+  {
+    slug: "ex-judge-trial-by-prime-time-supreme-court",
+    title: "Ex-Judge Pioneers 'Trial by Prime Time,' Supreme Court Ruins Ratings by Demanding Due Process",
+    excerpt: "In a groundbreaking shift for Indian jurisprudence, a former district judge has successfully demonstrated that the best place to defend against a criminal investigation is not a police station, but the cozy confines of a television news studio.",
+    category: "Editorial",
+    categorySlug: "editorial",
+    author: AUTHORS.vikram_malhotra,
+    date: "May 25, 2026",
+    readTime: "4 min read",
+    image: "/images/editorial_gov.svg",
+    isEditorial: true,
+    isTrending: true,
+    tags: ["Bureaucracy", "SupremeCourt", "TrialByMedia", "RealityCheck"],
+    content: `
+      <div class="mb-8 p-4 bg-cream-100 dark:bg-charcoal-800/40 border border-black/10 dark:border-white/10 rounded flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 font-sans select-none">
+        <div class="flex items-center space-x-2">
+          <span class="inline-flex h-2.5 w-2.5 rounded-full bg-accent-red dark:bg-red-500 animate-pulse"></span>
+          <span class="text-[10px] font-black uppercase tracking-widest text-charcoal-900 dark:text-cream-50">
+            Reality vs Interpretation Index
+          </span>
+        </div>
+        <a 
+          href="https://timesofindia.indiatimes.com/india/twisha-sharma-case-better-to-have-divorced-daughter-than-a-dead-one-says-solicitor-general-in-sc/articleshow/131302663.cms" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="inline-flex items-center bg-charcoal-900 hover:bg-accent-red dark:bg-cream-100 dark:text-charcoal-900 dark:hover:bg-red-500 dark:hover:text-cream-50 text-cream-50 text-[10px] font-black uppercase tracking-widest px-3 py-2 rounded transition-all duration-150 border border-transparent dark:border-white/10 shadow-sm"
+        >
+          Verified Source Context ↗
+        </a>
+      </div>
+
+      <p class="drop-cap">NEW DELHI — In a groundbreaking shift for Indian jurisprudence, a former district judge has successfully demonstrated that the best place to defend against a criminal investigation is not a police station, but the cozy confines of a television news studio.</p>
+
+      <p>The spectacle revolves around the tragic death of 33-year-old former model and beauty pageant winner Twisha Sharma, who was found hanging in her Bhopal matrimonial home just five months after marrying lawyer Samarth Singh.</p>
+
+      <p>But rather than rely on outdated concepts like "submitting evidence to the police," Twisha's mother-in-law, retired judge Giribala Singh, launched an innovative legal strategy: hopping from channel to channel to publicly diagnose her deceased daughter-in-law with mental health issues, addiction, and "promiscuity".</p>
+
+      <blockquote>
+        "It is a bold move for a former judicial officer. Usually, individuals accused of dowry harassment and abetment to suicide wait for the authorities to ask questions. But when you are a retired judge, you apparently know that the fastest route to clearing your name is a prime-time exclusive with a news anchor."
+      </blockquote>
+
+      <p>When Twisha's family pointed out the irony that a former judge delayed calling the police on the night of the death, Giribala Singh simply explained they were prioritizing a hospital rush — a defense she masterfully delivered to video platforms rather than the local precinct.</p>
+
+      <p>The media blitz was so relentless that the Supreme Court of India was forced to take suo motu cognisance of the case, citing concerns over "institutional bias" and the narrative that the judiciary was derailing the trial.</p>
+
+      <p>Chief Justice Surya Kant and his bench had to issue a polite but desperate plea to both families to please, for the love of the law, stop talking to the press and talk to the investigating agency instead.</p>
+
+      <blockquote>
+        "We are slightly in pain because of some of the actions," the bench stated, essentially begging witnesses to stop prejudicing the probe with premature public statements.
+      </blockquote>
+
+      <p>The Court’s shocking insistence on "due process" and "fair and impartial" investigation has reportedly devastated the TRPs of several national news networks, who were hoping to conduct the trial, verdict, and sentencing right after the evening commercial break.</p>
+
+      <p>Meanwhile, in a revelation that has completely upended traditional Indian societal norms, Solicitor General Tushar Mehta — representing the state government — informed the Supreme Court that "it is better to have a divorced daughter than face such an unfortunate incident".</p>
+
+      <p>This radical legal concept — that a living, breathing divorcée is practically preferable to a dead daughter — has sent shockwaves through the nation. Society is now grappling with the government's official stance that surviving a bad marriage via divorce might actually be better than succumbing to a dowry death.</p>
+
+      <p>Not to be outdone in the legal gymnastics, Twisha's husband, Samarth, initially contributed to the investigation by thoughtfully absconding for several days, presumably to ensure his mother had undivided media attention.</p>
+
+      <p>After a cash reward and a lookout notice were issued for his whereabouts, he finally withdrew his pre-arrest bail petition and surrendered to a Jabalpur court, where he was remanded to a 7-day police custody.</p>
+
+      <p>Recognizing that the local authorities were entirely outmatched by a former judge's mastery of the media cycle, the Supreme Court has officially backed the transfer of the investigation to the Central Bureau of Investigation (CBI).</p>
+
+      <p>As the premier agency takes over, the nation waits with bated breath to see if the CBI can solve the case before the defense books their next television appearance.</p>
+
+      <p>In the meantime, families across the country are reportedly updating their matrimonial background checks to ensure their future in-laws do not have direct lines to TV news producers.</p>
+
+      <div class="my-10 p-5 bg-cream-100 dark:bg-charcoal-800/30 border-l-4 border-accent-red dark:border-red-500 rounded-r font-serif text-xs leading-relaxed text-charcoal-800/80 dark:text-cream-100/80">
+        <span class="font-sans font-black uppercase tracking-wider text-accent-red dark:text-red-500 block mb-1">Satirical Editorial Disclaimer</span>
+        This article is a satirical editorial interpretation based on publicly reported events and is intended for commentary, criticism, and public discussion.
+      </div>
+    `,
+    tooReal: {
+      realHeadline: "SC transfers Twisha Sharma death probe to CBI, observes 'better to have divorced daughter than dead one'.",
+      realSource: "Times of India",
+      realDate: "May 22, 2026",
+      satireHeadline: "Ex-Judge Pioneers 'Trial by Prime Time,' Supreme Court Ruins Ratings by Demanding Due Process",
+      satireExcerpt: "A former district judge demonstrates that TV news studios are the premier judicial precincts for conducting defense investigations.",
+      satireSlug: "ex-judge-trial-by-prime-time-supreme-court"
+    }
   }
 ];
 
